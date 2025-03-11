@@ -3,4 +3,5 @@
 body {
   font-family: var(--poppins-sans);
   padding-inline: 1.5rem;
+  padding-bottom: 20rem;
 }
