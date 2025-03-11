@@ -11,7 +11,7 @@ type ButtonProps = {
 
 export default function Button({ type: size = "md", style, children }: ButtonProps) {
   return (
-    <button className={`${styles.button} ${styles[size]}`} style={style}>
+    <button className={`${styles.button} ${styles[size]}`} style={style} type='button'>
       {children}
     </button>
   )

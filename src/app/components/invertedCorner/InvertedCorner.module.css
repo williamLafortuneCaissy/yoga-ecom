@@ -1,0 +1,20 @@
+.invertedCorner {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    right: var(--right);
+    bottom: var(--bottom);
+
+    width: var(--size);
+    height: var(--size);
+
+    background-image: radial-gradient(circle at var(--circleAt),
+        transparent calc(var(--size)),
+        white calc(var(--size) + 1px));
+    /* +1px for smooth */
+  }
+}

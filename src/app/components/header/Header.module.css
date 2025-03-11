@@ -5,5 +5,11 @@
 }
 
 .logo {
-  margin-right: auto;
+  width: 14.8125rem;
+  height: 3.75rem;
+}
+
+.menu {
+  width: 1.5rem;
+  height: 1.5rem;
 }

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Button from "../button/Button";
 import styles from "./Header.module.css";
 
@@ -10,6 +9,7 @@ const Header = () => {
     <header className={styles.header}>
       <Link href="/">
         <Image
+          className={styles.logo}
           src="/brand.svg"
           alt="ZenFlow Studio"
           width={237}
@@ -18,7 +18,7 @@ const Header = () => {
       </Link>
       <Button style={{ marginLeft: 'auto', marginRight: '1.5rem' }}>{"Let's talk!"}</Button>
       <button>
-        <Image src="/menu.svg" width={24} height={24} alt="menu" />
+        <Image className={styles.menu} src="/menu.svg" width={24} height={24} alt="menu" />
       </button>
     </header>
   );

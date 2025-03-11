@@ -1,5 +1,5 @@
-import React from 'react';
 import Button from '../button/Button';
+import InvertedCorner from '../invertedCorner/InvertedCorner';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -11,10 +11,25 @@ const Hero = () => {
           <p>Find your <br /> INNER PEACE</p>
         </div>
         <div className={styles.bottomleft}>
-          <span>
-            <Button>Embrace mindful living</Button>
-          </span>
-          <h1><span>Inner Peace</span><span>Elevated Living</span> </h1>
+          <InvertedCorner circleAt='top right' size='1.5rem' bottom='100%' left='0'>
+            <InvertedCorner circleAt='top right' size='1.5rem' bottom="0" left="100%">
+              <span className={styles.spacer}>
+                <Button>Embrace mindful living</Button>
+              </span>
+            </InvertedCorner>
+          </InvertedCorner>
+          <h1>
+            <InvertedCorner circleAt='top right' size='1.5rem' bottom='0' left='100%'>
+              <span className={styles.spacer}>
+                Inner Peace
+              </span>
+            </InvertedCorner>
+            <InvertedCorner circleAt='top right' size='1.5rem' bottom='0' left='100%'>
+              <span className={styles.spacer}>
+                Elevated Living
+              </span>
+            </InvertedCorner>
+          </h1>
         </div>
       </div>
       <article className={styles.featured}>
