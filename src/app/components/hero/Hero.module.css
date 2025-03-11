@@ -49,12 +49,21 @@
 
 
 .featured {
-  background-color: #EBF5EF;
+  background-color: #f7e7d4;
   border-radius: 1.5rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   aspect-ratio: 1;
-  position: relative;
+
+  &:nth-of-type(2) {
+    color: white;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+      url('/hero-2.jpg');
+    background-position: center;
+    background-size: cover;
+
+  }
 
   p {
     line-height: 1.2;
@@ -68,8 +77,12 @@
   .bottomRight {
     margin-left: auto;
     width: max-content;
-    background-color: white;
-    padding: .5rem;
-    border-top-left-radius: 1.5rem;
+
+    .spacer {
+      padding: .5rem;
+      background-color: white;
+      border-top-left-radius: 1.5rem;
+      display: inline-block;
+    }
   }
 }

@@ -7,7 +7,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.main}>
         <div className={styles.topleft}>
-          <Button type="sm" >Yoga Lifestyle</Button>
+          <Button buttonType="sm" >Yoga Lifestyle</Button>
           <p>Find your <br /> INNER PEACE</p>
         </div>
         <div className={styles.bottomleft}>
@@ -33,23 +33,35 @@ const Hero = () => {
         </div>
       </div>
       <article className={styles.featured}>
-        <Button type='sm'>Client</Button>
+        <Button buttonType='sm'>Client</Button>
         <p>Become a <br />REGULAR CUSTOMER</p>
         <p>Step into <br />the Yoga Flow</p>
         <div className={styles.bottomRight}>
-          <Button type='circle'>
-            <Arrow />
-          </Button>
+          <InvertedCorner circleAt='top left' size='1rem' bottom='100%' right='0'>
+            <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
+              <span className={styles.spacer}>
+                <Button buttonType='circle'>
+                  <Arrow />
+                </Button>
+              </span>
+            </InvertedCorner>
+          </InvertedCorner>
         </div>
       </article>
       <article className={styles.featured}>
-        <Button type='sm'>Product</Button>
+        <Button buttonType='sm' inverted>Product</Button>
         <p>Create Your Practice <br /> as You Envisioned</p>
         <p>{"Nature's Essence"} <br />Within</p>
         <div className={styles.bottomRight}>
-          <Button type='circle'>
-            <Arrow />
-          </Button>
+          <InvertedCorner circleAt='top left' size='1rem' bottom='100%' right='0'>
+            <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
+              <span className={styles.spacer}>
+                <Button buttonType='circle'>
+                  <Arrow />
+                </Button>
+              </span>
+            </InvertedCorner>
+          </InvertedCorner>
         </div>
       </article>
     </section>
