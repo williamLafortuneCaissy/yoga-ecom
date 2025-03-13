@@ -40,7 +40,7 @@ const Hero = () => {
           <InvertedCorner circleAt='top left' size='1rem' bottom='100%' right='0'>
             <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
               <span className={styles.spacer}>
-                <Button buttonType='circle'>
+                <Button buttonType='circle' filled>
                   <Arrow />
                 </Button>
               </span>
@@ -56,7 +56,7 @@ const Hero = () => {
           <InvertedCorner circleAt='top left' size='1rem' bottom='100%' right='0'>
             <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
               <span className={styles.spacer}>
-                <Button buttonType='circle'>
+                <Button buttonType='circle' filled>
                   <Arrow />
                 </Button>
               </span>

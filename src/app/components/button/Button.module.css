@@ -1,21 +1,29 @@
 .button {
-  border: 1px solid black;
-  color: black;
+  --_main-color: black;
+  --_secondary-color: white;
+
+  border: 1px solid var(--_main-color);
+  color: var(--_main-color);
   border-radius: 100vw;
   transition: all .2s ease;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--_main-color);
+    color: var(--_secondary-color);
   }
 
   &[data-inverted="true"] {
-    border-color: white;
-    color: white;
+    --_main-color: white;
+    --_secondary-color: black;
+  }
+
+  &[data-filled="true"] {
+    background-color: var(--_main-color);
+    color: var(--_secondary-color);
 
     &:hover {
-      background-color: white;
-      color: black;
+      background-color: var(--_secondary-color);
+      color: var(--_main-color);
     }
   }
 }

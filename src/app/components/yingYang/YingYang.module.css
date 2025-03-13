@@ -1,0 +1,64 @@
+.yingYang {
+  aspect-ratio: 5 / 2;
+  background-image: url('/yingYang.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 10% 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "topLeft topLeft title"
+    "_ buttonContainer __";
+
+  margin-top: 5rem;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  .wrapper {
+    background-color: white;
+    display: block;
+    padding-left: .5rem;
+  }
+
+  .wrapper:first-child {}
+
+  .wrapper:nth-child(2) {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.topLeft {
+  grid-area: topLeft;
+
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+
+  p {
+    margin-top: 1.5rem;
+  }
+}
+
+
+.buttonContainer {
+  grid-area: buttonContainer;
+
+  .wrapper {
+    display: block;
+    background-color: white;
+    width: max-content;
+    padding: .75rem 1.25rem 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
