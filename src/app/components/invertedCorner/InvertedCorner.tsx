@@ -8,11 +8,12 @@ type InvertedCornerProps = {
   bottom?: CSSProperties['bottom'];
   left?: CSSProperties['left'];
   right?: CSSProperties['right'];
+  style?: CSSProperties;
   children: React.ReactNode;
 };
 
 
-const InvertedCorner = ({ circleAt, size, top, bottom, left, right, children }: InvertedCornerProps) => {
+const InvertedCorner = ({ circleAt, size, top, bottom, left, right, style: styleProps, children }: InvertedCornerProps) => {
   const style = {
     '--circleAt': circleAt,
     '--size': size,
@@ -20,6 +21,7 @@ const InvertedCorner = ({ circleAt, size, top, bottom, left, right, children }: 
     '--top': top || 'auto',
     '--left': left || 'auto',
     '--right': right || 'auto',
+    ...styleProps
   } as CSSProperties;
 
   return (<span className={styles.invertedCorner} style={style}>{children}</span>);
