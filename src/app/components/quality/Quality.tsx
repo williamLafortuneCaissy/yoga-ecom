@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "../button/Button";
 import InvertedCorner from "../invertedCorner/InvertedCorner";
 import styles from "./Quality.module.css";
@@ -42,7 +43,7 @@ const Quality = () => {
           </span>
         </InvertedCorner>
       </div>
-      <img className={styles.featured} src="/quality-2.jpg" alt="" />
+      <Image className={styles.featured} src="/quality-2.jpg" alt="High quality mats" width={1400} height={933} />
     </section>
   );
 }
