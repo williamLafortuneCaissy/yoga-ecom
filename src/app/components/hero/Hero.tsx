@@ -1,3 +1,4 @@
+import { ArrowIcon } from '../ArrowIcon';
 import Button from '../button/Button';
 import InvertedCorner from '../invertedCorner/InvertedCorner';
 import styles from './Hero.module.css';
@@ -41,7 +42,7 @@ const Hero = () => {
             <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
               <span className={styles.spacer}>
                 <Button buttonType='circle' filled>
-                  <Arrow />
+                  <ArrowIcon />
                 </Button>
               </span>
             </InvertedCorner>
@@ -57,7 +58,7 @@ const Hero = () => {
             <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
               <span className={styles.spacer}>
                 <Button buttonType='circle' filled>
-                  <Arrow />
+                  <ArrowIcon />
                 </Button>
               </span>
             </InvertedCorner>
@@ -65,12 +66,6 @@ const Hero = () => {
         </div>
       </article>
     </section>
-  );
-}
-
-const Arrow = () => {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m10.525 5.495l-.004 2l4.557.01l-9.603 9.585l1.413 1.415l9.63-9.61l-.012 4.614l2 .004l.02-8z" /></svg>
   );
 }
 

@@ -1,0 +1,72 @@
+.categories {
+  margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1.5fr 1fr;
+
+  article:last-child {
+    align-self: end
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  img {
+    border-radius: 1rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 1rem
+  }
+}
+
+.spacer {
+  background-color: white;
+  display: block;
+  width: max-content;
+}
+
+.imgContainer {
+  position: relative;
+
+  .btnContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .spacer {
+      background-color: white;
+      padding-left: .5rem;
+      padding-top: .5rem;
+      border-top-left-radius: 1.5rem;
+    }
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    h2 {
+      font-size: 1.5rem;
+
+      .spacer {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+
+  .buttonSpacer {
+    padding-block: .75rem;
+    padding-right: .75rem;
+    border-top-right-radius: 1.5rem;
+  }
+}

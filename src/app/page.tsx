@@ -1,4 +1,5 @@
 
+import Categories from "./components/categories/Categories";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Products from "./components/products/Products";
@@ -15,6 +16,7 @@ export default function Home() {
       <Products />
       <Quality />
       <Vinyasa />
+      <Categories />
     </>
   );
 }
