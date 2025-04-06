@@ -10,7 +10,7 @@ const Header = () => {
       <Link href="/">
         <Image
           className={styles.logo}
-          src="./brand.svg"
+          src="./images/brand.svg"
           alt="ZenFlow Studio"
           width={237}
           height={60}
@@ -18,7 +18,7 @@ const Header = () => {
       </Link>
       <Button style={{ marginLeft: 'auto', marginRight: '1.5rem' }}>{"Let's talk!"}</Button>
       <button>
-        <Image className={styles.menu} src="./menu.svg" width={24} height={24} alt="menu" />
+        <Image className={styles.menu} src="./images/menu.svg" width={24} height={24} alt="menu" />
       </button>
     </header>
   );

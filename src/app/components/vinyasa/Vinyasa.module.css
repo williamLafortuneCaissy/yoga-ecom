@@ -3,7 +3,7 @@
   border-radius: 1.5rem;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('/vinyasa-1.jpg');
+    url('/images/vinyasa-1.jpg');
   background-position: bottom;
   background-size: cover;
   aspect-ratio: 4/2;
