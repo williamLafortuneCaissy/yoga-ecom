@@ -6,10 +6,10 @@ import styles from "./Quality.module.css";
 const Quality = () => {
   return (
     <section className={styles.quality}>
-      <article>
+      <article className={styles.article}>
         <Button inverted>Products</Button>
-        <p>Create Your Sanctuary as You Envisioned</p>
-        <p>Nature’s Flow Within</p>
+        <p className={styles.p}>Create Your Sanctuary as You Envisioned</p>
+        <p className={styles.p}>Nature’s Flow Within</p>
       </article>
       <div className={styles.main}>
         <InvertedCorner circleAt="top right" size="1rem" bottom="0" left="100%" style={{ width: "100%" }}>
@@ -17,7 +17,7 @@ const Quality = () => {
             <Button>Modern Serenity</Button>
           </span>
         </InvertedCorner>
-        <h2>
+        <h2 className={styles.h2}>
           <InvertedCorner circleAt="top right" size="1rem" bottom="0" left="100%">
             <span className={`${styles.spacer} ${styles.roundedTop}`}>
               When we craft

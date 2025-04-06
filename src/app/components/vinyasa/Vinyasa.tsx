@@ -13,7 +13,7 @@ const Vinyasa = () => {
             </span>
           </InvertedCorner>
         </InvertedCorner>
-        <h2>
+        <h2 className={styles.h2}>
           <span className={styles.spacer} style={{ paddingBlock: ".5rem", borderTopRightRadius: "1rem", borderBottomRightRadius: "1rem" }}>Mindfully Crafted</span>
           <InvertedCorner circleAt="bottom right" size="1rem" top="0" left="100%">
             <InvertedCorner circleAt="top right" size="1rem" bottom="0" left="100%">

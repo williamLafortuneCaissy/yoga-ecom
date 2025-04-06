@@ -9,7 +9,7 @@
   .left {
     font-weight: 500;
 
-    h2 {
+    .h2 {
       font-size: 3rem;
       font-weight: inherit;
     }
@@ -30,7 +30,7 @@
     gap: 1rem;
   }
 
-  address {
+  .address {
     text-align: right;
   }
 }

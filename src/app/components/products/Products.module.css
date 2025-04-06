@@ -5,7 +5,7 @@
   gap: 3rem 1.5rem;
 
 
-  h2 {
+  .title {
     line-height: 1.2;
     font-size: 2rem;
     font-weight: 500;
@@ -41,7 +41,7 @@
     margin-bottom: calc(1lh - 1em);
   }
 
-  img {
+  .img {
     width: 100%;
     height: 100%;
     aspect-ratio: 1;
@@ -49,7 +49,7 @@
     object-fit: cover;
   }
 
-  img + * {
+  .img + * {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -64,7 +64,7 @@
     border-top-left-radius: 1rem;
   }
 
-  h3 {
+  .h3 {
     font-size: 1rem;
     font-weight: inherit;
   }
