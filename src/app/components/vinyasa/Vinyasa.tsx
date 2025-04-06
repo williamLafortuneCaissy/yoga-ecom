@@ -4,7 +4,7 @@ import styles from "./Vinyasa.module.css";
 
 const Vinyasa = () => {
   return (
-    <section className={styles.vinyasa}>
+    <section className={styles.vinyasa} style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./images/vinyasa-1.jpg')" }}>
       <div className={styles.bottomLeft}>
         <InvertedCorner circleAt="top right" size="1rem" bottom="100%" left="0">
           <InvertedCorner circleAt="top right" size="1rem" bottom="0" left="100%">

@@ -1,9 +1,6 @@
 .vinyasa {
   margin-top: 5rem;
   border-radius: 1.5rem;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('/images/vinyasa-1.jpg');
   background-position: bottom;
   background-size: cover;
   aspect-ratio: 4/2;

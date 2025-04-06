@@ -8,7 +8,6 @@
 .main {
   grid-row: 1 / span 2;
 
-  background-image: url('/images/hero-1.jpg');
   border-radius: 1.5rem;
   background-size: cover;
   background-position: right;
@@ -57,9 +56,6 @@
 
   &:nth-of-type(2) {
     color: white;
-    background-image:
-      linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-      url('/images/hero-2.jpg');
     background-position: center;
     background-size: cover;
 

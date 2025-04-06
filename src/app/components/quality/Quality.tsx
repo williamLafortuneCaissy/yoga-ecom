@@ -6,7 +6,7 @@ import styles from "./Quality.module.css";
 const Quality = () => {
   return (
     <section className={styles.quality}>
-      <article className={styles.article}>
+      <article className={styles.article} style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/quality-1.jpg')" }}>
         <Button inverted>Products</Button>
         <p className={styles.p}>Create Your Sanctuary as You Envisioned</p>
         <p className={styles.p}>Nature’s Flow Within</p>
@@ -44,7 +44,7 @@ const Quality = () => {
         </InvertedCorner>
       </div>
       <Image className={styles.featured} src="./images/quality-2.jpg" alt="High quality mats" width={1400} height={933} />
-    </section>
+    </section >
   );
 }
 

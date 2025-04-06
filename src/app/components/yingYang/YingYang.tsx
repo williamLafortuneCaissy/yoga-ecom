@@ -4,7 +4,7 @@ import styles from './YingYang.module.css';
 
 const YingYang = () => {
   return (
-    <section className={styles.yingYang}>
+    <section className={styles.yingYang} style={{ backgroundImage: "url('./images/yingYang.jpg')" }}>
       <h2 className={styles.title}>
         <InvertedCorner circleAt='bottom left' size='1rem' top='0' right='100%'>
           <InvertedCorner circleAt='top left' size='1rem' bottom="0" right="100%">
