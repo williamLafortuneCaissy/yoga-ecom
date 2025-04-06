@@ -19,7 +19,7 @@ function Article1() {
   return (
     <article className={styles.article}>
       <div className={styles.imgContainer}>
-        <Image className={styles.img} src="/categories-1.jpg" alt="Women doing yoga with her toddler" width={750} height={500} />
+        <Image className={styles.img} src="./categories-1.jpg" alt="Women doing yoga with her toddler" width={750} height={500} />
         <div className={styles.btnContainer}>
           <InvertedCorner circleAt="top left" size="1.5rem" bottom="0" right="100%">
             <InvertedCorner circleAt="top left" size="1.5rem" bottom="100%" right="0">
@@ -41,7 +41,7 @@ function Article2() {
   return (
     <article className={styles.article}>
       <div className={styles.imgContainer}>
-        <Image className={styles.img} src="/categories-2.jpg" alt="WOmen doing a complex yoga figure" width={900} height={900} />
+        <Image className={styles.img} src="./categories-2.jpg" alt="WOmen doing a complex yoga figure" width={900} height={900} />
         <div className={styles.content}>
           <InvertedCorner circleAt="top right" size="1.5rem" bottom="100%" left="0">
             <InvertedCorner circleAt="top right" size="1.5rem" bottom="0" left="100%">
@@ -73,7 +73,7 @@ function Article3() {
         POWER IN PRESENCE
       </h2>
       <div className={styles.imgContainer}>
-        <Image className={styles.img} src="/categories-2.jpg" alt="WOmen doing a complex yoga figure" width={880} height={501} />
+        <Image className={styles.img} src="./categories-2.jpg" alt="WOmen doing a complex yoga figure" width={880} height={501} />
         <div className={styles.btnContainer}>
           <InvertedCorner circleAt="top left" size="1.5rem" bottom="0" right="100%">
             <InvertedCorner circleAt="top left" size="1.5rem" bottom="100%" right="0">
