@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const isProd = true;
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   distDir: isProd ? '/docs' : 'out',
