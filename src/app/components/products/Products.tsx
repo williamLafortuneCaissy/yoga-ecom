@@ -4,9 +4,9 @@ import InvertedCorner from "../invertedCorner/InvertedCorner";
 import styles from "./Products.module.css";
 
 const productData = [
-  { sku: "SKU001", image: { src: "/product-1.jpg", width: 676, height: 1012, objectPosition: "top" }, title: "Training Equipment Starter pack", price: "49" },
-  { sku: "SKU002", image: { src: "/product-2.jpg", width: 676, height: 1013, objectPosition: "bottom" }, title: "Set of candles", price: "19" },
-  { sku: "SKU003", image: { src: "/product-3.jpg", width: 676, height: 448 }, title: "Yoga mat - 3mm", price: "39" }
+  { sku: "SKU001", image: { src: "./product-1.jpg", width: 676, height: 1012, objectPosition: "top" }, title: "Training Equipment Starter pack", price: "49" },
+  { sku: "SKU002", image: { src: "./product-2.jpg", width: 676, height: 1013, objectPosition: "bottom" }, title: "Set of candles", price: "19" },
+  { sku: "SKU003", image: { src: "./product-3.jpg", width: 676, height: 448 }, title: "Yoga mat - 3mm", price: "39" }
 ];
 
 const Products = () => {

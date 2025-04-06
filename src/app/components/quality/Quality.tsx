@@ -43,7 +43,7 @@ const Quality = () => {
           </span>
         </InvertedCorner>
       </div>
-      <Image className={styles.featured} src="/quality-2.jpg" alt="High quality mats" width={1400} height={933} />
+      <Image className={styles.featured} src="./quality-2.jpg" alt="High quality mats" width={1400} height={933} />
     </section>
   );
 }
