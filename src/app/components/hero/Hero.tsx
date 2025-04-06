@@ -19,7 +19,7 @@ const Hero = () => {
               </span>
             </InvertedCorner>
           </InvertedCorner>
-          <h1>
+          <h1 className={styles.h1}>
             <InvertedCorner circleAt='top right' size='1.5rem' bottom='0' left='100%'>
               <span className={styles.spacer}>
                 Inner Peace
@@ -35,8 +35,8 @@ const Hero = () => {
       </div>
       <article className={styles.featured}>
         <Button buttonType='sm'>Client</Button>
-        <p>Become a <br />REGULAR CUSTOMER</p>
-        <p>Step into <br />the Yoga Flow</p>
+        <p className={styles.p}>Become a <br />REGULAR CUSTOMER</p>
+        <p className={styles.p}>Step into <br />the Yoga Flow</p>
         <div className={styles.bottomRight}>
           <InvertedCorner circleAt='top left' size='1rem' bottom='100%' right='0'>
             <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>
@@ -51,8 +51,8 @@ const Hero = () => {
       </article>
       <article className={styles.featured}>
         <Button buttonType='sm' inverted>Product</Button>
-        <p>Create Your Practice <br /> as You Envisioned</p>
-        <p>{"Nature's Essence"} <br />Within</p>
+        <p className={styles.p}>Create Your Practice <br /> as You Envisioned</p>
+        <p className={styles.p}>{"Nature's Essence"} <br />Within</p>
         <div className={styles.bottomRight}>
           <InvertedCorner circleAt='top left' size='1rem' bottom='100%' right='0'>
             <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>

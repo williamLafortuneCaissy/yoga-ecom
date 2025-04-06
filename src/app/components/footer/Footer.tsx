@@ -7,7 +7,7 @@ const Footer = () => {
       <section className={styles.top}>
         <div className={styles.left}>
           <div>Design Your Practice</div>
-          <h2>Create Your Space</h2>
+          <h2 className={styles.h2}>Create Your Space</h2>
         </div>
         <Button filled>{"Let's Talk!"}</Button>
       </section>
@@ -19,7 +19,7 @@ const Footer = () => {
           <Button>Twitter</Button>
           <Button>Linkedin</Button>
         </div>
-        <address>
+        <address className={styles.address}>
           2485 Rue Lumière, <br />MONTRÉAL, QC
         </address>
       </section>

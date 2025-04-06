@@ -15,7 +15,7 @@ const YingYang = () => {
       </h2>
       <div className={styles.topLeft}>
         <Button buttonType="sm">Try Ying Yang</Button>
-        <p>Find Your Balance <br /> EMBRACE HARMONY TODAY</p>
+        <p className={styles.p}>Find Your Balance <br /> EMBRACE HARMONY TODAY</p>
       </div>
       <div className={styles.buttonContainer}>
         <InvertedCorner circleAt='top left' size='1rem' bottom='0' right='100%'>

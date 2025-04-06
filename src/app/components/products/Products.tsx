@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "../button/Button";
 import InvertedCorner from "../invertedCorner/InvertedCorner";
 import styles from "./Products.module.css";
@@ -37,7 +38,7 @@ function ProductItem({ image, title, price }: ProductItemProps) {
   return (
     <div className={styles.productItem}>
       <div className={styles.imageWrapper}>
-        <img src={image.src} alt={title} style={{ objectPosition: image.objectPosition }} width={image.width} height={image.height} />
+        <Image src={image.src} alt={title} className={styles.img} style={{ objectPosition: image.objectPosition }} width={image.width} height={image.height} />
         <InvertedCorner circleAt="top left" size="1rem" bottom="100%" right="0">
           <InvertedCorner circleAt="top left" size="1rem" bottom="0" right="100%">
             <span className={styles.spacer}>
@@ -46,7 +47,7 @@ function ProductItem({ image, title, price }: ProductItemProps) {
           </InvertedCorner>
         </InvertedCorner>
       </div>
-      <h3>{title}</h3>
+      <h3 className={styles.h3}>{title}</h3>
       <p>{price}$</p>
     </div>
   );

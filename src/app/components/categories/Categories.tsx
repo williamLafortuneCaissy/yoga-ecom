@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowIcon } from "../ArrowIcon";
 import Button from "../button/Button";
 import InvertedCorner from "../invertedCorner/InvertedCorner";
@@ -16,9 +17,9 @@ export default function Categories() {
 
 function Article1() {
   return (
-    <article>
+    <article className={styles.article}>
       <div className={styles.imgContainer}>
-        <img src="/categories-1.jpg" alt="Women doing yoga with her toddler" />
+        <Image className={styles.img} src="/categories-1.jpg" alt="Women doing yoga with her toddler" width={750} height={500} />
         <div className={styles.btnContainer}>
           <InvertedCorner circleAt="top left" size="1.5rem" bottom="0" right="100%">
             <InvertedCorner circleAt="top left" size="1.5rem" bottom="100%" right="0">
@@ -30,7 +31,7 @@ function Article1() {
         </div>
       </div>
       <Button>Yoga for Everyone</Button>
-      <h2>Embracing All, <br />GROWING TOGETHER</h2>
+      <h2 className={styles.title}>Embracing All, <br />GROWING TOGETHER</h2>
     </article>
   )
 }
@@ -38,9 +39,9 @@ function Article1() {
 
 function Article2() {
   return (
-    <article>
+    <article className={styles.article}>
       <div className={styles.imgContainer}>
-        <img src="/categories-2.jpg" alt="WOmen doing a complex yoga figure" />
+        <Image className={styles.img} src="/categories-2.jpg" alt="WOmen doing a complex yoga figure" width={900} height={900} />
         <div className={styles.content}>
           <InvertedCorner circleAt="top right" size="1.5rem" bottom="100%" left="0">
             <InvertedCorner circleAt="top right" size="1.5rem" bottom="0" left="100%">
@@ -65,14 +66,14 @@ function Article2() {
 
 function Article3() {
   return (
-    <article>
+    <article className={styles.article}>
       <Button>Empower Your Flow</Button>
-      <h2>
+      <h2 className={styles.title}>
         Strength in Motion <br />
         POWER IN PRESENCE
       </h2>
       <div className={styles.imgContainer}>
-        <img src="/categories-3.jpg" alt="Strong man doing a side plank" />
+        <Image className={styles.img} src="/categories-2.jpg" alt="WOmen doing a complex yoga figure" width={880} height={501} />
         <div className={styles.btnContainer}>
           <InvertedCorner circleAt="top left" size="1.5rem" bottom="0" right="100%">
             <InvertedCorner circleAt="top left" size="1.5rem" bottom="100%" right="0">
