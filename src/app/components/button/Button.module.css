@@ -15,6 +15,10 @@
   &[data-inverted="true"] {
     --_main-color: white;
     --_secondary-color: black;
+
+    &:focus-visible {
+      transition: none;
+    }
   }
 
   &[data-filled="true"] {
@@ -24,6 +28,12 @@
     &:hover {
       background-color: var(--_secondary-color);
       color: var(--_main-color);
+    }
+
+    &:focus-visible {
+      outline-color: white;
+      outline-offset: -2px;
+      transition: none;
     }
   }
 }
